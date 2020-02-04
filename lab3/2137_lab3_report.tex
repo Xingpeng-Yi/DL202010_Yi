@@ -60,8 +60,8 @@
 %=========== Body  ====================================
 \begin{document}
 
-\title{ELC 2137 Lab \#\#: Lab Title}
-\author{Put your name(s) here}
+\title{ELC 2137 Lab \#3: Adders}
+\author{Xingpeng Yi and Maya Martin}
 
 \maketitle
 
@@ -73,17 +73,57 @@ Type the summary of your experiment and results here.
 
 \section*{Q\&A}
 
-Answer questions posed in the lab assignment here.
+\begin{enumerate}
+	\item  Which gates could we use for combining the carry bits?
+	
+	Based on the truth table, a OR gate needs to be use for the carry bits. Only one carry needs to be true, the out carry will be true. It is an OR gate. The frsit and second carry are not true at same time, so an XOR gate is also fine.
+	
+	\item Which one should we use and why?
+	
+	A OR gate should be used in the lab, but XOR gate is also fine. In the lab, 7486 chip is used.  The chip has four XOR gates.The carry1 and carry 2 are not true at teh same time. It is true when one of the carry is true, so using a XOR will be identical as using OR gate.
+\end{enumerate}
 
 
 \section*{Results}
 
-In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.
+In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.\begin{table}[ht]\centering
+	\caption{2-bit adder truth table}
+	\label{tbl:example_table}
+	\begin{tabular}{ccc|cc|cc|cc}
+		\toprule
+		Cin & A & B & C1 & C2 & S1 & S2 & Cout & S \\
+		\midrule
+		0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+		0 & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 1 \\
+		0 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 1 \\
+		0 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 0 \\
+		1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 \\
+		1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 \\
+		1 & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 0 \\
+		1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 \\
+		\bottomrule
+	\end{tabular} 
+\end{table}
+According to the the table above, 
 
+\includegraphics[width=\textwidth]{"circuit demonstration page"}
 
-\section*{Code}
+\section*{Circuits}
 
-Include all of the code you wrote or modified here.
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.5\textwidth]{halfadder}
+	\caption{This is the half adder.}
+	\label{fig:half adder}			% label must be after caption
+\end{figure}
+There is a lack of the full adder pictures, but teh left half of the  2-bit adder is full adder circuit.
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=0.5\textwidth]{2-bitadder}
+	\caption{This is the 2-bit adder.}
+	\label{fig:2-bit adder}			% label must be after caption
+\end{figure}
+
+\section*{Conclusion}
 
 
 \end{document}
