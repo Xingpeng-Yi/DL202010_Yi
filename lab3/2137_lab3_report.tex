@@ -89,18 +89,18 @@ To complete the Adders lab students were required to build and design logical ci
 In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.\begin{table}[ht]\centering
 	\caption{2-bit adder truth table}
 	\label{tbl:example_table}
-	\begin{tabular}{ccc|cc|cc|cc}
+	\begin{tabular}{ccccc|ccc}
 		\toprule
-		Cin & A & B & C1 & C2 & S1 & S2 & Cout & S \\
+		Cin & A2 & A1 & B2 & B1 & Cout & S2 & S1\\
 		\midrule
-		0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
-		0 & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 1 \\
-		0 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 1 \\
-		0 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 0 \\
-		1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 \\
-		1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 \\
-		1 & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 0 \\
-		1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 \\
+		0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+		0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 \\
+		0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
+		0 & 1 & 0 & 0 & 1 & 0 & 1 & 1 \\
+		0 & 1 & 0 & 1 & 0 & 1 & 0 & 0 \\
+		1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 \\
+		1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+		
 		\bottomrule
 	\end{tabular} 
 \end{table}
@@ -115,7 +115,7 @@ According to the the table above,
 	\caption{This is the half adder.}
 	\label{fig:half adder}			% label must be after caption
 \end{figure}
-There is a lack of the full adder pictures, but teh left half of the  2-bit adder is full adder circuit.
+There is a lack of the full adder pictures, but the left half of the  2-bit adder is full adder circuit.
 
 \begin{figure}[ht]\centering
 	\includegraphics[width=0.5\textwidth]{2-bitadder}
@@ -124,6 +124,5 @@ There is a lack of the full adder pictures, but teh left half of the  2-bit adde
 \end{figure}
 
 \section*{Conclusion}
-
-
+In half adders, the carry follows an AND gate,  the sum is a NOR gate. In the full adder, it is a combination of two half adders. The sum of  first HA is connected to the third input to another HA. The carry of  second HA and the first carry go through an OR gate and result in the out carry of the FA. The 2-bit adder is a combination of 2 FAs. The out carry of the first FA is the third input of the second FA. Sum of the first FA and the sum of second FA are connected to the LED. The out carry of the second FA is the out carry of the 2-bit adder. In this lab, the OR gates are all replaced by XOR gates. In the truth table, the two carry in the FA shows a OR gate property, but these two carry never been true at the same time. Under this circumstance, using XOR gates is identical to OR gates.
 \end{document}
