@@ -1,0 +1,117 @@
+% Digital Logic Report Template
+% Created: 2020-01-10, John Miller
+
+%==========================================================
+%=========== Document Setup  ==============================
+
+% Formatting defined by class file
+\documentclass[11pt]{article}
+
+% ---- Document formatting ----
+\usepackage[margin=1in]{geometry}	% Narrower margins
+\usepackage{booktabs}				% Nice formatting of tables
+\usepackage{graphicx}				% Ability to include graphics
+
+%\setlength\parindent{0pt}	% Do not indent first line of paragraphs 
+\usepackage[parfill]{parskip}		% Line space b/w paragraphs
+%	parfill option prevents last line of pgrph from being fully justified
+
+% Parskip package adds too much space around titles, fix with this
+\RequirePackage{titlesec}
+\titlespacing\section{0pt}{8pt plus 4pt minus 2pt}{3pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{4pt plus 4pt minus 2pt}{-2pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{2pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+
+% ---- Hyperlinks ----
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}	% For URL's. Automatically links internal references.
+
+% ---- Code listings ----
+\usepackage{listings} 					% Nice code layout and inclusion
+\usepackage[usenames,dvipsnames]{xcolor}	% Colors (needs to be defined before using colors)
+
+% Define custom colors for listings
+\definecolor{listinggray}{gray}{0.98}		% Listings background color
+\definecolor{rulegray}{gray}{0.7}			% Listings rule/frame color
+
+% Style for Verilog
+\lstdefinestyle{Verilog}{
+	language=Verilog,					% Verilog
+	backgroundcolor=\color{listinggray},	% light gray background
+	rulecolor=\color{blue}, 			% blue frame lines
+	frame=tb,							% lines above & below
+	linewidth=\columnwidth, 			% set line width
+	basicstyle=\small\ttfamily,	% basic font style that is used for the code	
+	breaklines=true, 					% allow breaking across columns/pages
+	tabsize=3,							% set tab size
+	commentstyle=\color{gray},	% comments in italic 
+	stringstyle=\upshape,				% strings are printed in normal font
+	showspaces=false,					% don't underscore spaces
+}
+
+% How to use: \Verilog[listing_options]{file}
+\newcommand{\Verilog}[2][]{%
+	\lstinputlisting[style=Verilog,#1]{#2}
+}
+
+
+
+
+%======================================================
+%=========== Body  ====================================
+\begin{document}
+
+\title{ELC 2137 Lab \#4: Subtractor}
+\author{Maya Martin \& Xingpeng Yi}
+
+\maketitle
+
+
+\section*{Summary}
+
+The subtractor is similar to the 2-bit adder in the previous lab. when deal with a subtration of the binary, easiest way is adding the 2's compliment of teh second number to the first. In order to calculate the 2's compliment of teh second number, XOR gates are added between the Mode terminal and each bit of the second  number. A XOR gate is also placed between the mode terminal and the out carry of the two full adders, and the result is the out carry of the subtracter. 
+
+
+\section*{Q\&A}
+
+\begin{enumerate}
+	\item  Why did we use two full adders instead of a half adder and a full adder?
+	
+	Although half and full adders are both combinational logic circuits they hold different roles regarding how they process their inputs. In this lab we focused on the function of two full adders instead of a full and half adder combination because it allows our circuit the flexibility to build on each other. By using a full adder we are able to add three 1-bit digits that consist of OR/AND gates which in return allows us to add and carry along other inputs. Unlike half adders which would not have kept any of our addition throughout the lab. 
+	
+	\item How many input combinations would it take to exhaustively test the adder/subtractor?
+	
+	By squaring the binary conditions (n\^2),  we are able to exhaustively test the adder /subtractor (23) giving us the value 529 binary combinations. With these values we can find the exhaustive test to be equal to 4,232 input combinations. 
+	
+	\item Why were the combinations given in the truth table chosen?
+	
+	The combination that were given on the truth table were chosen to expand our concept of how to flip the carry/borrow output and solidify the concept of a subtractor circuit and its overall purpose.
+	
+	\item Do the results from your adder/subtractor match what you would expect from theory? Explain any discrepancies.
+	
+	The results from our theory did not reflect in our results, in such that our results flipped at the first digit in our expected results. For example for our expected results we calculated 011 but ended up getting 111, but flipping the a digit this resulted in us getting the correct results. A discrepancy that we encountered was the of the result is opposite to the expected result. 0s in the expected result table become 1s in the actual results, 1s become 0s. The reason is that a XOR gate is placed before the out carry. The mode is used to control the negation. The out carry of the two full adders and the mode goes through a XOR gate, and the output of the XOR gate is the out carry of the whole subtractor. When the mode is turned on, negation will turn the output to the opposite result. 
+	
+\end{enumerate}
+
+
+\section*{Results}
+
+
+\includegraphics[width=\textwidth]{"circuit"}
+\label{fig:Circuit picture}
+
+
+
+\includegraphics[width=\textwidth]{"schematic"}
+\label{fig:Schematic}
+
+
+
+\includegraphics[width=\textwidth]{"circuit page"}
+\label{fig:Circuit demonstration page}	
+
+
+\section*{Conclusion}
+The subtration of two binary numbers are simplfied to minuend add the 2's comliment of the subtrahend. To get the 2's compliment of the subtrahend, XOR  gates areplaced between mode terminal  of each bit of the subtrahend. The out carry of the whole circuit is the output of a XOR gate which has the out carry of the 2-bit adder and the mode terminal as the inputs. When mode is truned off, which is 0, the whole circuit is working as a 2-bit adder. Reversely, if the mode is on, which is 1, the circuit becoms a subtractor. Based on the truth table of XOR gate, if both of inputs are 1s, the output is 0. One of the inputs is 1, the  output is 1. Under the subtraction mode, mode input is 1. If the input is 1, it becomes 0 after the XOR gate. If the input is 0, it becomes 1 after the XOR gate. The mode is also connected to the whole circuit, which adds 1 to the circuit numbers. The whole process is how the 2's compliment is found. Flip each bit of teh number and add 1 at the last. The 2's compliment of the subtrahend is added to the minuend which is the expected result. The atual result differs from the ecpected result. The XOR gate after the out carry negates the out carry of the whole circuit, so the first bit of actual result is opposite ot the first bit of the ecpected result.
+
+
+\end{document}
