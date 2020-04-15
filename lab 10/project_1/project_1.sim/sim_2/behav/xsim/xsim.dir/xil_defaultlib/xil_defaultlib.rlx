@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/yixin/Desktop/DL202010_Yi/lab 10/project_1/project_1.sim/sim_2/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/yixin/Desktop/DL202010_Yi/lab 10/project_1/project_1.srcs/sim_2/new/sseg_TDM_test.sv,1586906775,systemVerilog,,,,sseg_TDM_test,,,,,,,,
+C:/Users/yixin/Desktop/DL202010_Yi/lab 10/project_1/project_1.srcs/sources_1/new/counter.sv,1586463548,systemVerilog,,C:/Users/yixin/Downloads/mux2.sv,,counter,,,,,,,,
+C:/Users/yixin/Desktop/DL202010_Yi/lab 10/project_1/project_1.srcs/sources_1/new/sseg4_TDM.sv,1586905477,systemVerilog,,C:/Users/yixin/Downloads/sseg_decoder.sv,,sseg4_TDM,,,,,,,,
+C:/Users/yixin/Downloads/AnodeDec.sv,1586901591,systemVerilog,,C:/Users/yixin/Downloads/add3.sv,,AnodeDec,,,,,,,,
+C:/Users/yixin/Downloads/add3.sv,1586905252,systemVerilog,,C:/Users/yixin/Downloads/bcd11.sv,,add3,,,,,,,,
+C:/Users/yixin/Downloads/bcd11.sv,1586901593,systemVerilog,,C:/Users/yixin/Desktop/DL202010_Yi/lab 10/project_1/project_1.srcs/sources_1/new/counter.sv,,bcd11,,,,,,,,
+C:/Users/yixin/Downloads/mux2.sv,1586899989,systemVerilog,,C:/Users/yixin/Downloads/mux4.sv,,mux2,,,,,,,,
+C:/Users/yixin/Downloads/mux4.sv,1586899990,systemVerilog,,C:/Users/yixin/Desktop/DL202010_Yi/lab 10/project_1/project_1.srcs/sources_1/new/sseg4_TDM.sv,,mux4,,,,,,,,
+C:/Users/yixin/Downloads/sseg_decoder.sv,1586901594,systemVerilog,,C:/Users/yixin/Desktop/DL202010_Yi/lab 10/project_1/project_1.srcs/sim_2/new/sseg_TDM_test.sv,,sseg_decoder,,,,,,,,
