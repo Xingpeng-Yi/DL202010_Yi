@@ -3,4 +3,5 @@
 Dec  7 2018
 00:33:28
 C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
-C:/Users/yixin/Downloads/debounce.sv,1587620405,systemVerilog,,,,debounce,,,,,,,,
+C:/Users/yixin/Downloads/debounce.sv,1587620405,systemVerilog,,C:/Users/yixin/Downloads/debounce_test.sv,,debounce,,,,,,,,
+C:/Users/yixin/Downloads/debounce_test.sv,1587620400,systemVerilog,,,,debounce_test,,,,,,,,
