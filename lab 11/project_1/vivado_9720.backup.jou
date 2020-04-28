@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 23 13:13:47 2020
+# Process ID: 9720
+# Current directory: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4404 C:\Users\yixin\Desktop\DL202010_Yi\lab 11\project_1\project_1.xpr
+# Log file: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/vivado.log
+# Journal file: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source guess_FSM_test.tcl
+close [ open {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv} w ]
+add_files {{C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv}}
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/yixin/Downloads/mux2.sv
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/yixin/Desktop/DL202010_Yi/lab 10/counter.sv}}
+update_compile_order -fileset sources_1

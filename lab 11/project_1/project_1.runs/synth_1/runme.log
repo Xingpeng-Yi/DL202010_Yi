@@ -1,0 +1,457 @@
+
+*** Running vivado
+    with args -log guessing_game.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source guessing_game.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source guessing_game.tcl -notrace
+Command: synth_design -top guessing_game -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3568 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 342.930 ; gain = 72.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'guessing_game' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/yixin/Desktop/DL202010_Yi/lab 10/counter.sv:23]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [C:/Users/yixin/Desktop/DL202010_Yi/lab 10/counter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/yixin/Downloads/debounce.sv:4]
+	Parameter N bound to: 1 - type: integer 
+	Parameter zero bound to: 2'b00 
+	Parameter wait1 bound to: 2'b01 
+	Parameter one bound to: 2'b11 
+	Parameter wait0 bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Users/yixin/Downloads/debounce.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/yixin/Downloads/mux2.sv:23]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (3#1) [C:/Users/yixin/Downloads/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'guess_FSM' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:23]
+	Parameter s0 bound to: 4'b0000 
+	Parameter s1 bound to: 4'b0001 
+	Parameter s2 bound to: 4'b0010 
+	Parameter s3 bound to: 4'b0011 
+	Parameter swin bound to: 4'b0101 
+	Parameter slose bound to: 4'b0110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:52]
+WARNING: [Synth 8-87] always_comb on 'y_reg' did not result in combinational logic [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:54]
+WARNING: [Synth 8-87] always_comb on 'win_reg' did not result in combinational logic [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:55]
+WARNING: [Synth 8-87] always_comb on 'lose_reg' did not result in combinational logic [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'guess_FSM' (4#1) [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:23]
+WARNING: [Synth 8-350] instance 'gF' of module 'guess_FSM' requires 6 connections, but only 5 given [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'guessing_game' (5#1) [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:23]
+WARNING: [Synth 8-3917] design guessing_game has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port an[0] driven by constant 0
+WARNING: [Synth 8-3917] design guessing_game has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port seg[0] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port dp driven by constant 1
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[15]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[14]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[13]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[12]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[11]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[9]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[7]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[6]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[5]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[4]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[3]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[2]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[1]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port led[0]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[15]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[14]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[13]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[12]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[11]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[10]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[9]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[8]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[7]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[6]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[5]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[4]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[3]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[2]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 398.879 ; gain = 128.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin gF:rst to constant 0 [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:44]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 398.879 ; gain = 128.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 398.879 ; gain = 128.316
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/yixin/Downloads/btnC.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/btnC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/btnC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yixin/Downloads/btnD.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/btnD.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/btnD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yixin/Downloads/btnU.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/btnU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/btnU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yixin/Downloads/clock.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/clock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yixin/Downloads/led.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yixin/Downloads/sseg.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/sseg.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/sseg.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yixin/Downloads/switches.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/switches.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/switches.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yixin/Downloads/btnL.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/btnL.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/btnL.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yixin/Downloads/btnR.xdc]
+Finished Parsing XDC File [C:/Users/yixin/Downloads/btnR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yixin/Downloads/btnR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guessing_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guessing_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 729.711 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 729.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 729.711 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 729.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 729.711 ; gain = 459.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 729.711 ; gain = 459.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 729.711 ; gain = 459.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "s_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "win" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "lose" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'win_reg' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:55]
+WARNING: [Synth 8-327] inferring latch for variable 'lose_reg' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 729.711 ; gain = 459.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 5     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 18    
+	   3 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module guess_FSM 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design guessing_game has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port an[0] driven by constant 0
+WARNING: [Synth 8-3917] design guessing_game has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port seg[0] driven by constant 1
+WARNING: [Synth 8-3917] design guessing_game has port dp driven by constant 1
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[15]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[14]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[13]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[12]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[11]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[10]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[9]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[8]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[7]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[6]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[5]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[4]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[3]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[2]
+WARNING: [Synth 8-3331] design guessing_game has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 729.711 ; gain = 459.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 729.711 ; gain = 459.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 741.176 ; gain = 470.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 741.941 ; gain = 471.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 741.941 ; gain = 471.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 741.941 ; gain = 471.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 741.941 ; gain = 471.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 741.941 ; gain = 471.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 741.941 ; gain = 471.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 741.941 ; gain = 471.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     2|
+|3     |LUT2  |     6|
+|4     |LUT3  |    11|
+|5     |LUT4  |     7|
+|6     |LUT5  |     2|
+|7     |LUT6  |     2|
+|8     |FDCE  |     9|
+|9     |FDPE  |     4|
+|10    |FDRE  |     4|
+|11    |LD    |     6|
+|12    |IBUF  |     7|
+|13    |OBUF  |    14|
+|14    |OBUFT |    14|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |    89|
+|2     |  c      |counter    |     2|
+|3     |  d1     |debounce   |     6|
+|4     |  d2     |debounce_0 |     6|
+|5     |  d3     |debounce_1 |     7|
+|6     |  d4     |debounce_2 |     7|
+|7     |  gF     |guess_FSM  |    24|
+|8     |  m2     |mux2       |     1|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 741.941 ; gain = 471.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 741.941 ; gain = 140.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 741.941 ; gain = 471.379
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 744.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 744.930 ; gain = 474.367
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 744.930 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/synth_1/guessing_game.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file guessing_game_utilization_synth.rpt -pb guessing_game_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 28 18:07:38 2020...

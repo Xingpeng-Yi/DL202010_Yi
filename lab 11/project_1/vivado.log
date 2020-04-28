@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 28 17:12:45 2020
+# Process ID: 13092
+# Current directory: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12216 C:\Users\yixin\Desktop\DL202010_Yi\lab 11\project_1\project_1.xpr
+# Log file: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/vivado.log
+# Journal file: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 669.191 ; gain = 39.609
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+file mkdir {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sim_2/new}
+close [ open {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sim_2/new/guessing_game_test.sv} w ]
+add_files -fileset sim_2 {{C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sim_2/new/guessing_game_test.sv}}
+update_compile_order -fileset sim_2
+create_fileset -simset sim_3
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+add_files -fileset sim_3 -norecurse {{C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sim_2/new/guessing_game_test.sv}}
+update_compile_order -fileset sim_3
+update_compile_order -fileset sim_3
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'guessing_game_test' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+"xvlog --incr --relax -prj guessing_game_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yixin/Desktop/DL202010_Yi/lab 10/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yixin/Downloads/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guess_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module guess_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module guessing_game
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yixin/Downloads/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sim_2/new/guessing_game_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module guessing_game_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fcdeb21059b042c38e1b5105d99ca235 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot guessing_game_test_behav xil_defaultlib.guessing_game_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:34]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'y' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.debounce(N=1)
+Compiling module xil_defaultlib.mux2(N=1)
+Compiling module xil_defaultlib.guess_FSM
+Compiling module xil_defaultlib.guessing_game
+Compiling module xil_defaultlib.guessing_game_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot guessing_game_test_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/yixin/Desktop/DL202010_Yi/lab -notrace
+couldn't read file "C:/Users/yixin/Desktop/DL202010_Yi/lab": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 28 17:35:57 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "guessing_game_test_behav -key {Behavioral:sim_3:Functional:guessing_game_test} -tclbatch {guessing_game_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source guessing_game_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'guessing_game_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 762.605 ; gain = 29.105
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'guessing_game_test' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+"xvlog --incr --relax -prj guessing_game_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fcdeb21059b042c38e1b5105d99ca235 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot guessing_game_test_behav xil_defaultlib.guessing_game_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:34]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'y' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:43]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "guessing_game_test_behav -key {Behavioral:sim_3:Functional:guessing_game_test} -tclbatch {guessing_game_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source guessing_game_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'guessing_game_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 777.410 ; gain = 0.000
+update_compile_order -fileset sim_3
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'guessing_game' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+"xvlog --incr --relax -prj guessing_game_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fcdeb21059b042c38e1b5105d99ca235 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot guessing_game_behav xil_defaultlib.guessing_game xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:34]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'y' [C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.srcs/sources_1/new/guessing_game.sv:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.debounce(N=1)
+Compiling module xil_defaultlib.mux2(N=1)
+Compiling module xil_defaultlib.guess_FSM
+Compiling module xil_defaultlib.guessing_game
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot guessing_game_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/yixin/Desktop/DL202010_Yi/lab -notrace
+couldn't read file "C:/Users/yixin/Desktop/DL202010_Yi/lab": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 28 17:40:13 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "guessing_game_behav -key {Behavioral:sim_3:Functional:guessing_game} -tclbatch {guessing_game.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source guessing_game.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'guessing_game_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 777.410 ; gain = 0.000
+update_compile_order -fileset sim_3
+add_files -fileset constrs_1 -norecurse {C:/Users/yixin/Downloads/btnC.xdc C:/Users/yixin/Downloads/btnD.xdc C:/Users/yixin/Downloads/btnU.xdc C:/Users/yixin/Downloads/clock.xdc C:/Users/yixin/Downloads/led.xdc C:/Users/yixin/Downloads/sseg.xdc C:/Users/yixin/Downloads/switches.xdc C:/Users/yixin/Downloads/btnL.xdc C:/Users/yixin/Downloads/btnR.xdc}
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 28 17:43:44 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/synth_1/runme.log
+[Tue Apr 28 17:43:44 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 777.410 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0F1FA
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 28 17:47:16 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/synth_1/runme.log
+[Tue Apr 28 17:47:16 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 28 17:55:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/synth_1/runme.log
+[Tue Apr 28 17:55:24 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 28 18:00:36 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/synth_1/runme.log
+[Tue Apr 28 18:00:36 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 28 18:03:38 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/synth_1/runme.log
+[Tue Apr 28 18:03:38 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 28 18:07:08 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/synth_1/runme.log
+[Tue Apr 28 18:07:08 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/yixin/Desktop/DL202010_Yi/lab 11/project_1/project_1.runs/impl_1/guessing_game.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0F1FA
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1785.008 ; gain = 40.285
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 28 18:13:58 2020...

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585795374">
   <File Type="PA-TCL" Name="top_lab9.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_lab9_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_lab9_reports.tcl"/>
   <File Type="RDS-RDS" Name="top_lab9.vds"/>
   <File Type="RDS-UTIL" Name="top_lab9_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_lab9_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="top_lab9.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_lab9_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="top_lab9_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/alu.sv">
@@ -40,37 +37,37 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../Downloads/switches.xdc">
+    <File Path="$PPRDIR/../../../../Downloads/switches.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/led.xdc">
+    <File Path="$PPRDIR/../../../../Downloads/led.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/clock.xdc">
+    <File Path="$PPRDIR/../../../../Downloads/clock.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/btnU.xdc">
+    <File Path="$PPRDIR/../../../../Downloads/btnU.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/btnD.xdc">
+    <File Path="$PPRDIR/../../../../Downloads/btnD.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/btnC.xdc">
+    <File Path="$PPRDIR/../../../../Downloads/btnC.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
